@@ -13,6 +13,10 @@ body {
     font-famiy: 'Lato';
 }
 
+.uk-logo {
+    font-family: 'Lato' !important
+}
+
 .uk-text-dark {
     color: #4d4d4d;
 }
@@ -48,5 +52,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .uk-card-default {
+    border-radius: 5px !important;
+}
+
+.uk-button {
+    border-radius: 3px !important
+}
+
+.uk-tile {
     border-radius: 5px !important;
 }

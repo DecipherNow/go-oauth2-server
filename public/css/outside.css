@@ -1,43 +1,64 @@
+/* Base Application Styles */
+
 body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #eee;
+    font-family: 'Lato';
 }
 
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
+.uk-heading-hero {
+    font-family: 'Lato';
+    font-weight: 400 !important;
 }
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
+
+.uk-heading {
+    font-famiy: 'Lato';
 }
-.form-signin .checkbox {
-  font-weight: normal;
+
+.uk-logo {
+    font-family: 'Lato' !important
 }
-.form-signin .form-control {
-  position: relative;
-  height: auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
+
+.uk-text-dark {
+    color: #4d4d4d;
 }
-.form-signin .form-control:focus {
-  z-index: 2;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato' !important;
+    font-weight: 900 !important;
 }
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+
+.uk-background-cd {
+    background-color: #00AEEf;
 }
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+
+.uk-navbar-nav > li > a {
+    font-family: 'Lato' !important;
+    font-weight: 400 !important;
 }
-.form-signin button[type="submit"] {
-  margin-bottom: 10px;
+
+.list-view {
+    background-color: #01b48f;
+}
+
+.detail-view {
+    background-color: #f5f7f9;
+}
+
+.uk-tile-blue-light {
+    background-color: #01b48f;
+}
+
+.uk-input {
+    border-radius: 3px !important;
+}
+
+.uk-card-default {
+    border-radius: 5px !important;
+}
+
+.uk-button {
+    border-radius: 3px !important;
+}
+
+.uk-tile {
+    border-radius: 5px !important;
 }

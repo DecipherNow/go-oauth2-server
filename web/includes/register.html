@@ -1,20 +1,57 @@
 {{ define "title"}}Register{{ end }}
 
 {{ define "content" }}
-<div class="container">
 
-  <form class="form-signin" action="" method="post">
-    <h2 class="form-signin-heading">Register</h2>
-    {{ if .error }}
-    <p class="text-danger">{{ .error }}</p>
-    {{ end }}
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-    <p>Already registered? <a href="/web/login{{ .queryString }}">Log in</a>
-  </form>
+<div class="uk-background-muted">
+    <div class="uk-container">
 
-</div> <!-- /container -->
+        <div class="uk-flex uk-margin" uk-height-viewport>
+            <div class="uk-margin-auto uk-margin-auto-vertical uk-width-1-2">
+
+                <div class="uk-card uk-card-body uk-card-default">
+                    <form class="uk-form-horizontal" action="" method="post">
+
+                        <!-- Header -->
+                        <h1 class="uk-heading-divider">Register</h1>
+                        {{ if .error }}
+                        <div class="uk-alert uk-alert-danger" uk-alert>
+                            <a class="uk-alert-close" uk-close></a>
+                            <p>{{ .error }}</p>
+                        </div>
+                        {{ end }}
+
+                        <!-- Email text field -->
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-horizontal-text">Email:</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-inline">
+                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                    <input type="email" name="email" id="inputEmail" placeholder="Email Address" class="uk-input" required autofocus>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Password text field -->
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-horizontal-text">Password:</label>
+                            <div class="uk-form-controls">
+                                <div class="uk-inline">
+                                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                                    <input type="password" name="password" id="inputPassword" placeholder="Password" class="uk-input" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="uk-button uk-button-primary uk-width-1-1" type="submit">Register</button>
+                    </form>
+
+                    <p class="uk-text-meta">Already Registered? <a class="uk-link-reset" href="/web/login{{ .queryString }}">Login</a></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
 {{ end }}
